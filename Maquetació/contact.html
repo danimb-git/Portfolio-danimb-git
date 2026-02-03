@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis proyectos</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="index.html" class="header-logo" aria-label="Ir a inicio"></a>
+      <a
+        href="aboutme.html"
+        class="button-generic sections-button header-button"
+        >Sobre mí</a
+      >
+      <a
+        href="myprojects.html"
+        class="button-generic sections-button header-button"
+        >Mis proyectos</a
+      >
+      <a
+        href="myservices.html"
+        class="button-generic sections-button header-button"
+        >Mis servicios</a
+      >
+      <a
+        href="contact.html"
+        class="button-generic sections-button header-button"
+        >Contacto</a
+      >
+      <form class="header-search" action="" method="get">
+        <button class="header-search-button" type="submit">
+          <img src="searchIcon.svg" alt="Buscar" />
+        </button>
+        <input
+          class="header-search-input"
+          type="text"
+          name="search"
+          placeholder="Buscador interno"
+        />
+      </form>
+    </header>
+    <section class="body-two-columns">
+      <div class="body contact-column">
+        <h2>Ficha de contacto</h2>
+        <div id="map"></div>
+        <div class="contact-info">
+          <p>
+            <strong>Dirección:</strong><br />
+            Calle Falsa 123, Ciudad, País
+          </p>
+          <p>
+            <strong>Teléfono:</strong><br />
+            +34 600 123 456
+          </p>
+          <p>
+            <strong>Correo electrónico:</strong><br />
+            contacto@ejemplo.com
+          </p>
+        </div>
+        <h3>FAQs</h3>
+        <div class="faq-container">
+          <button class="faq-question topquestion">
+            ¿En que tipo de proyectos trabajas?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Principalmente desarrollo sitios web y aplicaciones a medida,
+              desde portfolios personales hasta plataformas con base de datos y
+              gestión de usuarios. También colaboro en proyectos que integran
+              herramientas de inteligencia artificial o requieren una
+              arquitectura técnica bien estructurada.
+            </p>
+          </div>
+
+          <button class="faq-question middlequestion">
+            ¿Haces presupuestos cerrados o por horas?
+          </button>
+          <div class="faq-answer hiddenanswer">
+            <p>
+              Depende del tipo de proyecto. En trabajos pequeños o bien
+              definidos suelo ofrecer un presupuesto cerrado, mientras que en
+              proyectos más amplios o en evolución trabajo por fases o bloques
+              de horas. En ambos casos, detallo siempre el alcance y los plazos
+              antes de empezar.
+            </p>
+          </div>
+
+          <button class="faq-question middlequestion">
+            ¿Haces servicios para webs existentes?
+          </button>
+          <div class="faq-answer hiddenanswer">
+            <p>
+              Sí, por supuesto. Muchos clientes me contactan para optimizar su
+              web actual: mejorar el rendimiento, la accesibilidad o la
+              seguridad, sin necesidad de rehacer todo el sitio. Adaptamos el
+              trabajo al estado y las necesidades reales de tu proyecto.
+            </p>
+          </div>
+
+          <button class="faq-question bottomquestion">¿Cuánto tardas en responder?</button>
+          <div class="faq-answer bottomanswer hiddenanswer">
+            <p>
+              Intento responder siempre en menos de 24 horas. Si el mensaje
+              incluye detalles sobre un proyecto o una solicitud de presupuesto,
+              suelo enviar una primera propuesta en un plazo de 2 a 3 días
+              laborables, según la complejidad.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="body">
+        <h1 style="align-self: flex-start">Contacto</h1>
+        <section class="card">
+          <p>
+            Si tienes alguna duda, propuesta o simplemente quieres saludar,
+            estaré encantado de leerte. Puedes contactarme a través del
+            formulario, por correo o en mis redes sociales. Intento responder
+            siempre en el menor tiempo posible y con la máxima claridad. Tu
+            mensaje es importante para mí, tanto si buscas colaboración en un
+            proyecto como si solo quieres compartir una idea.
+          </p>
+        </section>
+        <section class="card">
+          <section class="quote">
+            <div class="quote-wrapper">
+              <h2 class="quote-title">Formulario de contacto</h2>
+
+              <form class="quote-form" action="" method="post">
+                <!-- fila 1 -->
+                <div class="quote-row">
+                  <div class="quote-field">
+                    <label for="fullName">Nombre y apellidos</label>
+                    <input
+                      id="fullName"
+                      name="fullName"
+                      type="text"
+                      placeholder="Nombre y apellidos"
+                      required
+                    />
+                  </div>
+
+                  <div class="quote-field">
+                    <label for="mail">Correo electrónico</label>
+                    <input
+                      id="mail"
+                      name="mail"
+                      type="email"
+                      placeholder="Correo electrónico"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <!-- fila 2 -->
+                <div class="quote-field quote-field--full">
+                  <label for="subject">Asunto</label>
+                  <input
+                    id="subject"
+                    name="subject"
+                    type="text"
+                    placeholder="Asunto"
+                  />
+                </div>
+
+                <!-- descripció (ample complet) -->
+                <div class="quote-field quote-field--full">
+                  <label for="description">Descripción</label>
+                  <textarea
+                    id="description"
+                    name="description"
+                    placeholder="Descripción"
+                    rows="6"
+                    required
+                  ></textarea>
+                </div>
+
+                <!-- bottom -->
+                <div class="quote-bottom">
+                  <label class="quote-consent">
+                    <input type="checkbox" name="privacyConsent" required />
+                    <span>Consentimiento de privacidad</span>
+                  </label>
+
+                  <button type="submit" class="button-generic">
+                    Enviar formulario <span class="button-arrow">→</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </section>
+        </section>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <section class="footer-buttons">
+        <a href="privacy.html" class="button-generic footer-button">
+          Política de privacidad
+        </a>
+        <a href="accessibility.html" class="button-generic footer-button">
+          Accesibilidad
+        </a>
+        <a href="credits.html" class="button-generic footer-button">
+          Créditos / Colaboradores
+        </a>
+        <a href="faq.html" class="button-generic footer-button"> FAQ </a>
+      </section>
+      <section class="footer-icons">
+        <section class="footer-icons">
+          <a href="https://instagram.com"
+            ><img src="instagram.svg" alt="Instagram" class="footer-icon"
+          /></a>
+          <a href="https://facebook.com"
+            ><img src="facebook.svg" alt="Facebook" class="footer-icon"
+          /></a>
+          <a href="https://twitter.com"
+            ><img src="twitter.svg" alt="Twitter" class="footer-icon"
+          /></a>
+          <a href="https://github.com"
+            ><img src="github.svg" alt="GitHub" class="footer-icon"
+          /></a>
+          <a href="https://linkedin.com"
+            ><img src="linkedin.svg" alt="Linkedin" class="footer-icon"
+          /></a>
+        </section>
+      </section>
+    </footer>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="map-contact.js"></script>
+    <script src="faq.js"></script>
+  </body>
+</html>
