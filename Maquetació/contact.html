@@ -10,7 +10,7 @@
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
       crossorigin=""
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="desktop.css" />
   </head>
   <body>
     <!-- Header -->
@@ -106,7 +106,9 @@
             </p>
           </div>
 
-          <button class="faq-question bottomquestion">¿Cuánto tardas en responder?</button>
+          <button class="faq-question bottomquestion">
+            ¿Cuánto tardas en responder?
+          </button>
           <div class="faq-answer bottomanswer hiddenanswer">
             <p>
               Intento responder siempre en menos de 24 horas. Si el mensaje
@@ -134,7 +136,25 @@
             <div class="quote-wrapper">
               <h2 class="quote-title">Formulario de contacto</h2>
 
-              <form class="quote-form" action="" method="post">
+              <form
+                class="quote-form"
+                action="https://formspree.io/f/mbdkernn"
+                method="post"
+              >
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="Nueva solicitud de contacto"
+                />
+
+                <!--
+                DOESN'T WORK WITH FORMSPREE FREE PLAN
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="http://127.0.0.1:5500/gracias.html"
+                />
+                -->
                 <!-- fila 1 -->
                 <div class="quote-row">
                   <div class="quote-field">
@@ -149,10 +169,10 @@
                   </div>
 
                   <div class="quote-field">
-                    <label for="mail">Correo electrónico</label>
+                    <label for="email">Correo electrónico</label>
                     <input
-                      id="mail"
-                      name="mail"
+                      id="email"
+                      name="email"
                       type="email"
                       placeholder="Correo electrónico"
                       required
@@ -173,10 +193,10 @@
 
                 <!-- descripció (ample complet) -->
                 <div class="quote-field quote-field--full">
-                  <label for="description">Descripción</label>
+                  <label for="message">Descripción</label>
                   <textarea
-                    id="description"
-                    name="description"
+                    id="message"
+                    name="message"
                     placeholder="Descripción"
                     rows="6"
                     required
@@ -185,14 +205,22 @@
 
                 <!-- bottom -->
                 <div class="quote-bottom">
-                  <label class="quote-consent">
-                    <input type="checkbox" name="privacyConsent" required />
-                    <span>Consentimiento de privacidad</span>
+                  <input
+                    type="checkbox"
+                    id="privacyConsent"
+                    name="privacyConsent"
+                    class="quote-consent-checkbox"
+                    required
+                  />
+                  <label for="privacyConsent" class="quote-consent-label">
+                    Acepto el consentimiento de privacidad
                   </label>
 
-                  <button type="submit" class="button-generic">
-                    Enviar formulario <span class="button-arrow">→</span>
-                  </button>
+                  <input
+                    type="submit"
+                    value="Enviar formulario"
+                    class="quote-consent-input"
+                  />
                 </div>
               </form>
             </div>
@@ -203,16 +231,16 @@
     <!-- Footer -->
     <footer>
       <section class="footer-buttons">
-        <a href="privacy.html" class="button-generic footer-button">
+        <a href="footerdestination.html" class="button-generic footer-button">
           Política de privacidad
         </a>
-        <a href="accessibility.html" class="button-generic footer-button">
+        <a href="footerdestination.html" class="button-generic footer-button">
           Accesibilidad
         </a>
-        <a href="credits.html" class="button-generic footer-button">
+        <a href="footerdestination.html" class="button-generic footer-button">
           Créditos / Colaboradores
         </a>
-        <a href="faq.html" class="button-generic footer-button"> FAQ </a>
+        <a href="footerdestination.html" class="button-generic footer-button"> FAQ </a>
       </section>
       <section class="footer-icons">
         <section class="footer-icons">
@@ -225,7 +253,7 @@
           <a href="https://twitter.com"
             ><img src="twitter.svg" alt="Twitter" class="footer-icon"
           /></a>
-          <a href="https://github.com"
+          <a href="https://github.com/danimb-git"
             ><img src="github.svg" alt="GitHub" class="footer-icon"
           /></a>
           <a href="https://linkedin.com"
