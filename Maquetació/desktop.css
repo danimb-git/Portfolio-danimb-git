@@ -363,7 +363,8 @@ footer {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    column-gap: 50px;
+    row-gap: 20px;
 }
 
 .footer-icons {

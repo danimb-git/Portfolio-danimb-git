@@ -16,3 +16,7 @@ L.tileLayer(
 ).addTo(map);
 
 var marker = L.marker([41.537492, 2.079590]).addTo(map);
+
+window.addEventListener("resize", () => {
+  map.invalidateSize();
+});
