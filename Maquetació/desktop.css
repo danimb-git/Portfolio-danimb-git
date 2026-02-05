@@ -1059,7 +1059,7 @@ footer {
 
 /* Cada camp: label + input */
 .quote-field {
-    min-width: 200px;
+    min-width: 300px;
 
     flex: 1;
 

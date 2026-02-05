@@ -1,9 +1,20 @@
+.card {
+    flex-flow: column nowrap;
+    padding: 20px;
+}
+
+.card-image {
+    height: 200px;
+    width: auto;
+}
+
 .header-home-image {
     width: 250px;
 }
 
 .about-grid {
     grid-template-columns: 150px 1fr;
+    padding: 0px;
 }
 
 .featured-header {
@@ -21,16 +32,6 @@
 
 .other-interests-grid {
     grid-template-columns: repeat(2, 1fr);
-}
-
-.card {
-    flex-flow: column nowrap;
-    padding: 20px;
-}
-
-.card-image {
-    height: 200px;
-    width: auto;
 }
 
 .body-two-columns {
