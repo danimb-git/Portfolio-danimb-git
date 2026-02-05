@@ -1,11 +1,12 @@
 .card {
-    flex-flow: column nowrap;
     padding: 20px;
+
+    flex-flow: column nowrap;
 }
 
 .card-image {
-    height: 200px;
     width: auto;
+    height: 200px;
 }
 
 .header-home-image {
@@ -13,8 +14,9 @@
 }
 
 .about-grid {
-    grid-template-columns: 150px 1fr;
     padding: 0px;
+
+    grid-template-columns: 150px 1fr;
 }
 
 .featured-header {
@@ -45,6 +47,7 @@
 .contact-column-top-section {
     position: relative;
     width: 100%;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -55,14 +58,15 @@
     align-items: stretch;
 }
 
-#map{
-  width: 100%;
-  height: 250px;
-  flex: 1 1 220px;
+#map {
+    width: 100%;
+    height: 250px;
+
+    flex: 1 1 220px;
 }
 
-.contact-info{
-  flex: 1 1 220px;
+.contact-info {
+    flex: 1 1 220px;
 }
 
 .quote-wrapper {
