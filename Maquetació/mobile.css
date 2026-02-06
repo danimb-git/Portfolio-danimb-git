@@ -1,0 +1,124 @@
+h1 {
+    font-size: 38px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p,
+a,
+.about-btn,
+.selection-btn,
+.skills-table th,
+.skills-table td,
+.faq-question,
+.quote-field label,
+.quote-field input,
+.quote-field input::placeholder,
+.quote-field textarea::placeholder,
+.quote-field textarea,
+.quote-consent-label,
+.quote-consent-input,
+.button-generic,
+.sections-button {
+    font-size: 14px;
+}
+
+body {
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+}
+
+header {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+footer {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.header-home {
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.header-home>div {
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.header-home-image {
+    width: 100%;
+    aspect-ratio: auto;
+}
+
+.sections-pair-buttons {
+    flex-flow: column nowrap;
+}
+
+.body {
+    width: 100%;
+}
+
+.about-grid {
+    grid-template-columns: 115px 1fr;
+}
+
+.about-btn,
+.about-btn.is-active,
+.selection-btn,
+.selection-btn.is-active {
+    padding: 8px 10px;
+}
+
+.skills-table th,
+.skills-table td {
+    padding: 8px 10px;
+}
+
+.skills-col--name {
+    width: 45%;
+}
+
+.skills-col--evidence {
+    width: 55%;
+}
+
+.other-interests-grid {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.proyectos-servicios {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.button-project {
+    align-self: center;
+}
+
+.quote-wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.quote-field {
+    min-width: 200px;
+}
+
+.quote-bottom {
+    padding-left: 10px;
+}
+
+.contact-column {
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
