@@ -155,7 +155,7 @@ header {
 }
 
 .header-logo {
-    background-image: url('/Imatges/Logo.png');
+    background-image: url('../images/Logo.png');
     background-size: cover;
     background-position: center;
 
@@ -420,7 +420,7 @@ footer {
 }
 
 .header-home-image {
-    background-image: url('/Imatges/Dani0.png');
+    background-image: url('../images/Dani0.png');
     background-size: cover;
     background-position: center;
     box-shadow: var(--shadow-diagonal);
@@ -520,23 +520,23 @@ footer {
 }
 
 .card-image--runlearn {
-    background-image: url('/Imatges/Run&Learn Diario inteligente de entrenamiento.png');
+    background-image: url('../images/Run&Learn Diario inteligente de entrenamiento.png');
 }
 
 .card-image--wildebit {
-    background-image: url('/Imatges/Wildebit Clasificador inteligente de reservas.png');
+    background-image: url('../images/Wildebit Clasificador inteligente de reservas.png');
 }
 
 .card-image--design {
-    background-image: url('/Imatges/Diseño y desarrollo web.png');
+    background-image: url('../images/Diseño y desarrollo web.png');
 }
 
 .card-image--maintenance {
-    background-image: url('/Imatges/Mantenimiento y optimización.png');
+    background-image: url('../images/Mantenimiento y optimización.png');
 }
 
 .presentation {
-    background-image: url('/Imatges/Background.png');
+    background-image: url('../images/Background.png');
     background-size: cover;
     background-position: center;
     box-shadow: var(--shadow-diagonal);
@@ -585,7 +585,7 @@ footer {
 /* --- ABOUT ME --- */
 
 .card-image--dani1 {
-    background-image: url('/Imatges/Dani1.png');
+    background-image: url('../images/Dani1.png');
 }
 
 .about-grid {
@@ -885,19 +885,19 @@ footer {
 
 /* Cambia estas rutas a tus imágenes reales */
 .interest-front--photo {
-    background-image: url('/Imatges/Fotografía.png');
+    background-image: url('../images/Fotografía.png');
 }
 
 .interest-back--mountain {
-    background-image: url('/Imatges/Montaña.png');
+    background-image: url('../images/Montaña.png');
 }
 
 .interest-front--ai {
-    background-image: url('/Imatges/Inteligencia artificial.png');
+    background-image: url('../images/Inteligencia artificial.png');
 }
 
 .interest-back--music {
-    background-image: url('/Imatges/Música.png');
+    background-image: url('../images/Música.png');
 }
 
 /* --- CONTACT --- */
