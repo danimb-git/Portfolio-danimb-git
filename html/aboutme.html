@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre mí</title>
+    <link rel="stylesheet" href="../css/desktop.css" />
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="../css/tablet.css" />
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="../css/mobile.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="../index.html" class="header-logo" aria-label="Ir a inicio"></a>
+      <a
+        href="aboutme.html"
+        class="button-generic sections-button header-button"
+        >Sobre mí</a
+      >
+      <a
+        href="myprojects.html"
+        class="button-generic sections-button header-button"
+        >Mis proyectos</a
+      >
+      <a
+        href="myservices.html"
+        class="button-generic sections-button header-button"
+        >Mis servicios</a
+      >
+      <a
+        href="contact.html"
+        class="button-generic sections-button header-button"
+        >Contacto</a
+      >
+      <form class="header-search" action="" method="get">
+        <button class="header-search-button" type="submit">
+          <img src="../icons/searchIcon.svg" alt="Buscar" />
+        </button>
+        <input
+          class="header-search-input"
+          type="text"
+          name="search"
+          placeholder="Buscador interno"
+        />
+      </form>
+    </header>
+    <section class="body">
+      <h1>Sobre mí</h1>
+      <!-- Presentation card -->
+      <article class="card">
+        <div class="card-image card-image--dani1"></div>
+        <div class="card-content">
+          <p>
+            Soy Daniel Moore, desarrollador web con una mente curiosa y
+            orientada al detalle. <br /><br />
+            Me apasiona explorar cómo la inteligencia artificial puede mejorar
+            los procesos digitales y hacer más eficientes las soluciones que
+            creamos. Trabajo con un enfoque estructurado y creativo, cuidando
+            tanto la lógica del código como la experiencia de quien lo utiliza.
+            <br /><br />
+            Creo que cada proyecto es una oportunidad para aprender,
+            experimentar y construir algo que aporte valor real.
+          </p>
+        </div>
+      </article>
+      <!-- CV -->
+      <section class="about-grid card">
+        <button class="about-btn is-active" data-key="sobremi" type="button">
+          Sobre mí
+        </button>
+        <button class="about-btn" data-key="experiencia" type="button">
+          Experiencia
+        </button>
+        <button class="about-btn" data-key="formacion" type="button">
+          Formación
+        </button>
+        <button class="about-btn" data-key="habilidades" type="button">
+          Habilidades
+        </button>
+        <button class="about-btn" data-key="idiomas" type="button">
+          Idiomas
+        </button>
+        <div class="about-panel" id="aboutPanel"></div>
+      </section>
+      <a class="button-generic" href="../docs/CV Daniel Moore (DAW).pdf" download>
+        Descargar CV
+        <img src="../icons/download.svg" alt="" class="button-generic-icon" />
+      </a>
+      <hr />
+    </section>
+    <!-- Competencias i Soft skills -->
+    <section class="featured">
+      <div class="featured-header">
+        <h2>Competencias y Soft Skills</h2>
+        <div class="selection-pannel">
+          <button class="selection-btn">Frontend</button>
+          <button class="selection-btn">Backend</button>
+          <button class="selection-btn">Soft Skills</button>
+        </div>
+      </div>
+      <div class="skills-table-wrapper">
+        <table class="skills-table" id="skillsTable">
+          <colgroup>
+            <col class="skills-col skills-col--name" />
+            <col class="skills-col skills-col--evidence" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Competencias</th>
+              <th>Evidencias</th>
+            </tr>
+          </thead>
+          <tbody id="skillsTbody"></tbody>
+        </table>
+      </div>
+      <hr />
+    </section>
+    <!-- Otros intereses -->
+    <section class="featured">
+      <h2 style="align-self: first baseline">Otros intereses</h2>
+      <!-- Otros intereses (flip cards) -->
+      <div class="other-interests-wrapper other-interests-grid">
+        <!-- 1) Empieza en IMAGEN -->
+        <button
+          class="interest-card"
+          type="button"
+          aria-label="Interés: Fotografía (girar tarjeta)"
+        >
+          <span class="interest-inner">
+            <!-- FRONT (imagen) -->
+            <span
+              class="interest-face interest-front interest-front--photo"
+              aria-hidden="true"
+            ></span>
+
+            <!-- BACK (texto) -->
+            <span class="interest-face interest-back">
+              <p>
+                La fotografía me enseña a mirar con atención. Me gusta capturar
+                momentos sencillos, juegos de luz y paisajes naturales. Es una
+                forma de creatividad tranquila que combina técnica y
+                sensibilidad.
+              </p>
+            </span>
+          </span>
+        </button>
+
+        <!-- 2) Empieza en TEXTO (arranca ya “girada”) -->
+        <button
+          class="interest-card is-flipped"
+          type="button"
+          aria-label="Interés: Montaña (girar tarjeta)"
+        >
+          <span class="interest-inner">
+            <!-- FRONT (texto) -->
+            <span class="interest-face interest-front interest-front--text">
+              <p>
+                La montaña me ayuda a desconectar y poner las ideas en orden.
+                Disfruto del trail y las rutas largas: cada subida es un reto y
+                una forma de volver a lo esencial.
+              </p>
+            </span>
+
+            <!-- BACK (imagen) -->
+            <span
+              class="interest-face interest-back interest-back--mountain"
+              aria-hidden="true"
+            ></span>
+          </span>
+        </button>
+
+        <!-- 3) Empieza en IMAGEN -->
+        <button
+          class="interest-card"
+          type="button"
+          aria-label="Interés: Inteligencia Artificial (girar tarjeta)"
+        >
+          <span class="interest-inner">
+            <!-- FRONT (imagen) -->
+            <span
+              class="interest-face interest-front interest-front--ai"
+              aria-hidden="true"
+            ></span>
+
+            <!-- BACK (texto) -->
+            <span class="interest-face interest-back">
+              <p>
+                Me fascina cómo la IA está transformando la forma en que creamos
+                y aprendemos. Exploro ideas y prototipos que combinan
+                programación y creatividad, con foco en entender el “cómo” y el
+                “por qué”.
+              </p>
+            </span>
+          </span>
+        </button>
+
+        <!-- 4) Empieza en TEXTO (arranca ya “girada”) -->
+        <button
+          class="interest-card is-flipped"
+          type="button"
+          aria-label="Interés: Música (girar tarjeta)"
+        >
+          <span class="interest-inner">
+            <!-- FRONT (texto) -->
+            <span class="interest-face interest-front interest-front--text">
+              <p>
+                La música siempre ha sido mi refugio. Escucho estilos muy
+                variados, desde electrónica ambiental hasta indie alternativo. A
+                veces experimento con edición de audio y pequeños proyectos
+                personales de sonido.
+              </p>
+            </span>
+
+            <!-- BACK (imagen) -->
+            <span
+              class="interest-face interest-back interest-back--music"
+              aria-hidden="true"
+            ></span>
+          </span>
+        </button>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <section class="footer-buttons">
+        <a href="footerdestination.html" class="button-generic footer-button">
+          Política de privacidad
+        </a>
+        <a href="footerdestination.html" class="button-generic footer-button">
+          Accesibilidad
+        </a>
+        <a href="footerdestination.html" class="button-generic footer-button">
+          Créditos / Colaboradores
+        </a>
+        <a href="footerdestination.html" class="button-generic footer-button"> FAQ </a>
+      </section>
+      <section class="footer-icons">
+        <section class="footer-icons">
+          <a href="https://instagram.com"
+            ><img src="../icons/instagram.svg" alt="Instagram" class="footer-icon"
+          /></a>
+          <a href="https://facebook.com"
+            ><img src="../icons/facebook.svg" alt="Facebook" class="footer-icon"
+          /></a>
+          <a href="https://twitter.com"
+            ><img src="../icons/twitter.svg" alt="Twitter" class="footer-icon"
+          /></a>
+          <a href="https://github.com/danimb-git"
+            ><img src="../icons/github.svg" alt="GitHub" class="footer-icon"
+          /></a>
+          <a href="https://linkedin.com"
+            ><img src="../icons/linkedin.svg" alt="Linkedin" class="footer-icon"
+          /></a>
+        </section>
+      </section>
+    </footer>
+    <script src="../js/about-grid.js"></script>
+    <script src="../js/skills-table.js"></script>
+    <script src="../js/interests-flip.js"></script>
+  </body>
+</html>

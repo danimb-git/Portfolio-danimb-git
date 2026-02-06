@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Información legal y ayuda</title>
+    <style>
+      :root {
+        --bg: #0b0f14;
+        --panel: #121826;
+        --text: #e6edf3;
+        --muted: #a9b4c0;
+        --link: #7dd3fc;
+        --border: rgba(255, 255, 255, 0.12);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          Arial,
+          sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.55;
+      }
+      header {
+        padding: 24px 16px;
+        border-bottom: 1px solid var(--border);
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.04),
+          transparent
+        );
+      }
+      main {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 24px 16px 56px;
+      }
+      .topnav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 12px;
+      }
+      .topnav a {
+        color: var(--text);
+        text-decoration: none;
+        padding: 8px 12px;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.03);
+      }
+      .topnav a:hover {
+        border-color: rgba(125, 211, 252, 0.65);
+      }
+      section {
+        margin-top: 22px;
+        padding: 18px 16px;
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        background: var(--panel);
+      }
+      h1 {
+        font-size: 1.35rem;
+        margin: 0;
+      }
+      h2 {
+        font-size: 1.1rem;
+        margin: 0 0 10px;
+      }
+      p,
+      li {
+        color: var(--muted);
+      }
+      a {
+        color: var(--link);
+      }
+      .meta {
+        margin-top: 6px;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+      footer {
+        margin-top: 26px;
+        color: var(--muted);
+        font-size: 0.9rem;
+        text-align: center;
+      }
+      code {
+        color: var(--text);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <main style="padding: 0 16px">
+        <h1>Información: Privacidad · Accesibilidad · Créditos · FAQ</h1>
+
+        <nav class="topnav" aria-label="Navegación de secciones">
+          <a href="#privacidad">Política de privacidad</a>
+          <a href="#accesibilidad">Accesibilidad</a>
+          <a href="#creditos">Créditos / Colaboradores</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+      </main>
+    </header>
+
+    <main>
+      <section id="privacidad">
+        <h2>Política de privacidad</h2>
+        <p>
+          Este sitio es un portfolio personal. La información mostrada tiene
+          fines informativos y de contacto profesional.
+        </p>
+        <ul>
+          <li>
+            <strong>Datos que podrías enviar:</strong> si usas un formulario de
+            contacto (o me escribes), podrías compartir nombre, email y el
+            contenido del mensaje.
+          </li>
+          <li>
+            <strong>Finalidad:</strong> responder consultas, presupuestos o
+            solicitudes relacionadas con el portfolio.
+          </li>
+          <li>
+            <strong>Conservación:</strong> mantengo los mensajes el tiempo
+            mínimo necesario para gestionar la solicitud y seguimiento.
+          </li>
+          <li>
+            <strong>Terceros:</strong> no vendo tus datos. Podrían intervenir
+            proveedores técnicos (hosting/correo) para el funcionamiento del
+            servicio.
+          </li>
+          <li>
+            <strong>Derechos:</strong> puedes solicitar acceso, rectificación o
+            eliminación de tus datos escribiendo al email de contacto del sitio.
+          </li>
+        </ul>
+        <p>
+          Nota: este texto es de ejemplo. Si vas a publicar el sitio, adapta
+          esta política a tu situación real (cookies, analítica, formularios,
+          hosting, etc.).
+        </p>
+        <p><a href="#top">Volver arriba</a></p>
+      </section>
+
+      <section id="accesibilidad">
+        <h2>Accesibilidad</h2>
+        <p>
+          El objetivo de este portfolio es ser usable por el mayor número de
+          personas posible, incluyendo usuarios con lector de pantalla,
+          navegación por teclado y diferentes tamaños de pantalla.
+        </p>
+        <ul>
+          <li>
+            <strong>Navegación por teclado:</strong> enlaces y botones
+            accesibles con TAB.
+          </li>
+          <li>
+            <strong>Contraste:</strong> se busca contraste suficiente entre
+            texto y fondo.
+          </li>
+          <li>
+            <strong>Texto alternativo:</strong> las imágenes informativas deben
+            incluir <code>alt</code> descriptivo.
+          </li>
+          <li>
+            <strong>Estructura semántica:</strong> uso de encabezados y
+            secciones para facilitar la comprensión.
+          </li>
+        </ul>
+        <p>
+          Si encuentras algún problema de accesibilidad, puedes reportarlo
+          mediante la página de contacto y lo revisaré.
+        </p>
+        <p><a href="#top">Volver arriba</a></p>
+      </section>
+
+      <section id="creditos">
+        <h2>Créditos / Colaboradores</h2>
+        <p>
+          Proyecto de portfolio diseñado y maquetado por
+          <strong>Daniel Moore Burgos</strong>.
+        </p>
+        <ul>
+          <li>
+            <strong>Iconos:</strong> recursos SVG propios y/o de librerías de
+            iconos (revisar licencias antes de publicar).
+          </li>
+          <li>
+            <strong>Tipografías:</strong> se usan fuentes del sistema para
+            priorizar rendimiento.
+          </li>
+          <li>
+            <strong>Colaboraciones (ejemplo):</strong> revisión de contenido y
+            feedback de UI por compañeros de clase.
+          </li>
+        </ul>
+        <p class="meta">
+          Si quieres aparecer como colaborador/a aquí, indícame el nombre y la
+          contribución.
+        </p>
+        <p><a href="#top">Volver arriba</a></p>
+      </section>
+
+      <section id="faq">
+        <h2>FAQ</h2>
+
+        <h3 style="margin: 12px 0 6px">¿Este portfolio recopila cookies?</h3>
+        <p>
+          Por defecto, no. Si más adelante se añade analítica o integraciones,
+          se informará y se configurará según corresponda.
+        </p>
+
+        <h3 style="margin: 12px 0 6px">¿Cómo puedo contactarte?</h3>
+        <p>
+          Desde la sección de contacto del sitio. Si no hay formulario, puedes
+          usar el email indicado allí.
+        </p>
+
+        <h3 style="margin: 12px 0 6px">¿Puedo ver el código del portfolio?</h3>
+        <p>
+          Sí, si el repositorio es público o si te comparto acceso. También
+          puedo enviar capturas o una demo.
+        </p>
+
+        <h3 style="margin: 12px 0 6px">¿Ofreces servicios de desarrollo?</h3>
+        <p>
+          Sí: diseño y desarrollo web, mantenimiento, optimización y mejoras de
+          accesibilidad (según alcance).
+        </p>
+
+        <p><a href="#top">Volver arriba</a></p>
+      </section>
+    </main>
+  </body>
+</html>
