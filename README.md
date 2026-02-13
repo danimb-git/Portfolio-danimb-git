@@ -52,6 +52,8 @@
 
 Este proyecto es mi portfolio personal: un sitio estático pensado para mostrar quién soy, qué hago y cómo contactarme.
 
+Además, se trata de un **proyecto educativo** realizado como trabajo de la asignatura **Disseny d’interfícies web** del **CFGS de DAW**.
+
 - **Público objetivo:** recruiters, equipos de producto/startups y posibles clientes.
 - **Objetivos:** navegación clara, buena primera impresión visual y conversión (contacto / solicitud de presupuesto).
 
@@ -86,10 +88,13 @@ Este proyecto es mi portfolio personal: un sitio estático pensado para mostrar 
 
 ## Stack y herramientas
 
-- **Frontend:** HTML5, CSS3, JavaScript (vanilla).
-- **Librerías / integraciones:** Leaflet (mapa), Formspree (formularios).
-- **Deploy:** GitHub Pages usando `gh-pages` (script `npm run deploy`).
-- **Herramientas:** Git/GitHub, VS Code.
+- **Frontend:** HTML5, CSS3 y JavaScript (vanilla), sin frameworks.
+- **Librerías / integraciones:**
+  - **Leaflet:** librería JS para renderizar el mapa interactivo en la página de contacto (marcador, zoom y controles).
+  - **Tiles de mapa (OpenStreetMap/Esri):** proveedor(es) de teselas usados por Leaflet para mostrar el mapa.
+  - **Formspree:** endpoint externo para gestionar el envío de formularios (contacto/presupuesto) sin backend propio.
+- **Deploy:** GitHub Pages mediante el paquete `gh-pages` (devDependency). El script `npm run deploy` publica la carpeta `dist/`.
+- **Herramientas:** Git/GitHub y VS Code.
 
 ---
 
@@ -97,6 +102,7 @@ Este proyecto es mi portfolio personal: un sitio estático pensado para mostrar 
 
 ```
 dist/
+  index.html
   css/
     desktop.css
     tablet.css
@@ -142,11 +148,20 @@ npm run deploy
 
 ---
 
-## Responsive y diseno
+## Responsive y diseño
 
-- **Breakpoints:** tablet `<= 900px`, mobile `<= 600px` (CSS por archivo).
-- **Layout:** uso de Flexbox/Grid + componentes reutilizables (cards, botones, secciones destacadas).
-- **UI:** paleta definida en variables CSS (`:root`) + sombras y bordes consistentes.
+El portfolio está pensado para verse bien en **desktop, tablet y móvil**. La base de estilos se define para pantallas grandes y, a partir de ahí, se aplican ajustes progresivos para reducir columnas, reorganizar secciones y mantener la legibilidad.
+
+- **Breakpoints:**
+  - **Tablet:** `max-width: 900px`
+  - **Mobile:** `max-width: 600px`
+- **CSS por capas (1 archivo por breakpoint):**
+  - `desktop.css` contiene el estilo base (layout, tipografías, variables y componentes).
+  - `tablet.css` se carga con `media="screen and (max-width: 900px)"` y ajusta el layout a pantallas medianas.
+  - `mobile.css` se carga con `media="screen and (max-width: 600px)"` y optimiza la experiencia en móvil.
+- **Layout responsive:** combinación de **Flexbox/Grid** para que listas/galerías pasen de varias columnas a menos columnas (o una sola) y secciones que en desktop están en horizontal se apilen en vertical.
+- **Consistencia visual:** paleta centralizada en variables CSS (`:root`), con sombras/bordes/espaciados coherentes para reutilizar componentes (cards, botones, secciones destacadas) en todas las páginas.
+- **Verificación:** comprobación de los puntos de corte con el modo responsive del navegador (DevTools) para asegurar que no haya desbordes y que la navegación siga siendo cómoda.
 
 ---
 
