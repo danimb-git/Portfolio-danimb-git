@@ -1,104 +1,104 @@
 <div align="center">
-  <img src="dist/images/Logo.png" alt="Logo del portfolio" width="120" />
+  <img src="dist/images/Logo.png" alt="Portfolio logo" width="120" />
 
   <h1>Portfolio — Daniel Moore Burgos</h1>
 
   <p>
-    Portfolio personal responsive para presentar proyectos, servicios y facilitar el contacto profesional.
+    Responsive personal portfolio to showcase projects, services and provide professional contact information.
   </p>
 
   <p>
     <a href="https://danimb-git.github.io/Portfolio-danimb-git/">Live demo</a>
     ·
-    <a href="https://github.com/danimb-git/Portfolio-danimb-git">Repositorio</a>
+    <a href="https://github.com/danimb-git/Portfolio-danimb-git">Repository</a>
     ·
-    <a href="mailto:daniel.moore04@gmail.com">Contacto</a>
+    <a href="mailto:daniel.moore04@gmail.com">Contact</a>
   </p>
 </div>
 
-- Diseño limpio con sistema de colores (CSS variables) y layout responsive (desktop/tablet/mobile).
-- Interacciones en JS: panel “Sobre mí”, tabla de skills filtrable, tarjetas flip, FAQ accordion y mapa con Leaflet.
+- Clean design with a color system (CSS variables) and responsive layout (desktop/tablet/mobile).
+- JS interactions: "About me" panel, filterable skills table, flip cards, FAQ accordion and Leaflet map.
 
 ---
 
-## Demo / enlaces
+## Demo / Links
 
 - **Live demo:** `https://danimb-git.github.io/Portfolio-danimb-git/` (GitHub Pages)
-- **Repositorio:** `https://github.com/danimb-git/Portfolio-danimb-git`
+- **Repository:** `https://github.com/danimb-git/Portfolio-danimb-git`
 - **CV (PDF):** [CV Daniel Moore (DAW)](<dist/docs/CV Daniel Moore (DAW).pdf>)
 - **Wireframes / Figma:** `https://www.figma.com/design/Vm1bSPfOiRzeAkFpqGLzTg/Portfolio---Maqueta-gr%C3%A0fica?node-id=1-2&t=THDdzR7qwrqzgc3N-1`
-- **Contacto:** `daniel.moore04@gmail.com`
+- **Contact:** `daniel.moore04@gmail.com`
 
 ---
 
-## Indice (Table of Contents)
+## Table of Contents
 
-- [Contexto y objetivos](#contexto-y-objetivos)
-- [Funcionalidades](#funcionalidades)
-- [Mapa del sitio](#mapa-del-sitio)
-- [Stack y herramientas](#stack-y-herramientas)
-- [Estructura de carpetas](#estructura-de-carpetas)
-- [Instalacion y uso (local)](#instalacion-y-uso-local)
-- [Responsive y diseno](#responsive-y-diseno)
-- [SEO y accesibilidad](#seo-y-accesibilidad)
+- [Context and Goals](#context-and-goals)
+- [Features](#features)
+- [Site Map](#site-map)
+- [Tech Stack and Tools](#tech-stack-and-tools)
+- [Folder Structure](#folder-structure)
+- [Installation and Local Usage](#installation-and-local-usage)
+- [Responsive Design](#responsive-design)
+- [SEO and Accessibility](#seo-and-accessibility)
 - [Roadmap](#roadmap)
-- [Creditos y recursos](#creditos-y-recursos)
-- [Licencia](#licencia)
-- [Autor](#autor)
+- [Credits and Resources](#credits-and-resources)
+- [License](#license)
+- [Author](#author)
 
 ---
 
-## Contexto y objetivos
+## Context and Goals
 
-Este proyecto es mi portfolio personal: un sitio estático pensado para mostrar quién soy, qué hago y cómo contactarme.
+This project is my personal portfolio: a static site designed to showcase who I am, what I do and how to get in touch with me.
 
-Además, se trata de un **proyecto educativo** realizado como trabajo de la asignatura **Disseny d’interfícies web** del **CFGS de DAW**.
+It is also an **educational project** completed as coursework for the **Web Interface Design** subject in the **CFGS DAW (Web Application Development)** program.
 
-- **Público objetivo:** recruiters, equipos de producto/startups y posibles clientes.
-- **Objetivos:** navegación clara, buena primera impresión visual y conversión (contacto / solicitud de presupuesto).
-
----
-
-## Funcionalidades
-
-- **Navegación:** header y footer consistentes + enlaces entre secciones.
-- **Home:** secciones principales + proyectos y servicios destacados.
-- **Sobre mí:** panel dinámico (Sobre mí / Experiencia / Formación / Habilidades / Idiomas) + descarga de CV.
-- **Skills:** tabla de competencias con filtro `Frontend / Backend / Soft Skills`.
-- **Intereses:** tarjetas “flip” (interacción click para girar).
-- **Servicios:** listado + formulario de presupuesto (Formspree) con consentimiento de privacidad.
-- **Contacto:** ficha con mapa (Leaflet + OpenStreetMap/Esri) + FAQ accordion + formulario (Formspree).
-- **Responsive:** CSS separado por breakpoint (desktop/tablet/mobile).
+- **Target audience:** recruiters, product teams/startups and potential clients.
+- **Goals:** clear navigation, strong visual first impression and conversion (contact / quote request).
 
 ---
 
-## Mapa del sitio
+## Features
+
+- **Navigation:** consistent header and footer + links between sections.
+- **Home:** main sections + featured projects and services.
+- **About me:** dynamic panel (About me / Experience / Education / Skills / Languages) + CV download.
+- **Skills:** competency table with `Frontend / Backend / Soft Skills` filter.
+- **Interests:** flip cards (click interaction to flip).
+- **Services:** listing + quote request form (Formspree) with privacy consent.
+- **Contact:** info card with map (Leaflet + OpenStreetMap/Esri) + FAQ accordion + form (Formspree).
+- **Responsive:** separate CSS per breakpoint (desktop/tablet/mobile).
+
+---
+
+## Site Map
 
 - **Home:** `dist/index.html`
-- **Sobre mí:** `dist/html/aboutme.html`
-- **Mis proyectos:** `dist/html/myprojects.html`
-  - **Proyecto:** `dist/html/proyecto-runlearn.html`
-  - **Proyecto:** `dist/html/proyecto-wildebit.html`
-- **Mis servicios:** `dist/html/myservices.html`
-- **Contacto:** `dist/html/contact.html`
-- **Gracias:** `dist/html/gracias.html`
-- **Legal / ayuda (footer):** `dist/html/footerdestination.html`
+- **About me:** `dist/html/aboutme.html`
+- **My projects:** `dist/html/myprojects.html`
+  - **Project:** `dist/html/proyecto-runlearn.html`
+  - **Project:** `dist/html/proyecto-wildebit.html`
+- **My services:** `dist/html/myservices.html`
+- **Contact:** `dist/html/contact.html`
+- **Thank you:** `dist/html/gracias.html`
+- **Legal / help (footer):** `dist/html/footerdestination.html`
 
 ---
 
-## Stack y herramientas
+## Tech Stack and Tools
 
-- **Frontend:** HTML5, CSS3 y JavaScript (vanilla), sin frameworks.
-- **Librerías / integraciones:**
-  - **Leaflet:** librería JS para renderizar el mapa interactivo en la página de contacto (marcador, zoom y controles).
-  - **Tiles de mapa (OpenStreetMap/Esri):** proveedor(es) de teselas usados por Leaflet para mostrar el mapa.
-  - **Formspree:** endpoint externo para gestionar el envío de formularios (contacto/presupuesto) sin backend propio.
-- **Deploy:** GitHub Pages mediante el paquete `gh-pages` (devDependency). El script `npm run deploy` publica la carpeta `dist/`.
-- **Herramientas:** Git/GitHub y VS Code.
+- **Frontend:** HTML5, CSS3 and JavaScript (vanilla), no frameworks.
+- **Libraries / integrations:**
+  - **Leaflet:** JS library to render the interactive map on the contact page (marker, zoom and controls).
+  - **Map tiles (OpenStreetMap/Esri):** tile provider(s) used by Leaflet to display the map.
+  - **Formspree:** external endpoint to handle form submissions (contact/quote) without a custom backend.
+- **Deploy:** GitHub Pages via the `gh-pages` package (devDependency). The `npm run deploy` script publishes the `dist/` folder.
+- **Tools:** Git/GitHub and VS Code.
 
 ---
 
-## Estructura de carpetas
+## Folder Structure
 
 ```
 dist/
@@ -130,16 +130,16 @@ dist/
 
 ---
 
-## Instalacion y uso (local)
+## Installation and Local Usage
 
-1. Clona el repo:
+1. Clone the repo:
    ```bash
    git clone https://github.com/danimb-git/Portfolio-danimb-git.git
    cd Portfolio-danimb-git
    ```
-2. Abre `dist/index.html` directamente en tu navegador **o** usa una extensión tipo **Live Server** apuntando a `dist/`.
+2. Open `dist/index.html` directly in your browser **or** use a **Live Server** extension pointing to `dist/`.
 
-### Deploy a GitHub Pages
+### Deploy to GitHub Pages
 
 ```bash
 npm install
@@ -148,56 +148,56 @@ npm run deploy
 
 ---
 
-## Responsive y diseño
+## Responsive Design
 
-El portfolio está pensado para verse bien en **desktop, tablet y móvil**. La base de estilos se define para pantallas grandes y, a partir de ahí, se aplican ajustes progresivos para reducir columnas, reorganizar secciones y mantener la legibilidad.
+The portfolio is designed to look good on **desktop, tablet and mobile**. Base styles are defined for large screens and progressive adjustments are applied from there to reduce columns, reorganize sections and maintain readability.
 
 - **Breakpoints:**
   - **Tablet:** `max-width: 900px`
   - **Mobile:** `max-width: 600px`
-- **CSS por capas (1 archivo por breakpoint):**
-  - `desktop.css` contiene el estilo base (layout, tipografías, variables y componentes).
-  - `tablet.css` se carga con `media="screen and (max-width: 900px)"` y ajusta el layout a pantallas medianas.
-  - `mobile.css` se carga con `media="screen and (max-width: 600px)"` y optimiza la experiencia en móvil.
-- **Layout responsive:** combinación de **Flexbox/Grid** para que listas/galerías pasen de varias columnas a menos columnas (o una sola) y secciones que en desktop están en horizontal se apilen en vertical.
-- **Consistencia visual:** paleta centralizada en variables CSS (`:root`), con sombras/bordes/espaciados coherentes para reutilizar componentes (cards, botones, secciones destacadas) en todas las páginas.
-- **Verificación:** comprobación de los puntos de corte con el modo responsive del navegador (DevTools) para asegurar que no haya desbordes y que la navegación siga siendo cómoda.
+- **Layered CSS (1 file per breakpoint):**
+  - `desktop.css` contains the base styles (layout, typography, variables and components).
+  - `tablet.css` is loaded with `media="screen and (max-width: 900px)"` and adjusts the layout for medium screens.
+  - `mobile.css` is loaded with `media="screen and (max-width: 600px)"` and optimizes the experience for mobile.
+- **Responsive layout:** combination of **Flexbox/Grid** so that lists/galleries go from multiple columns to fewer columns (or a single one) and sections that are horizontal on desktop stack vertically.
+- **Visual consistency:** centralized palette in CSS variables (`:root`), with consistent shadows/borders/spacing to reuse components (cards, buttons, featured sections) across all pages.
+- **Verification:** breakpoint testing with the browser's responsive mode (DevTools) to ensure there are no overflows and that navigation remains comfortable.
 
 ---
 
-## SEO y accesibilidad
+## SEO and Accessibility
 
-- **SEO básico:** `meta viewport`, estructura por páginas y títulos por sección.
-- **Accesibilidad:** uso de semántica HTML, `alt` en iconos/imágenes y `aria-label` en navegación.
-- **Formularios:** labels visibles + `required` donde aplica.
+- **Basic SEO:** `meta viewport`, page-based structure and section headings.
+- **Accessibility:** semantic HTML, `alt` attributes on icons/images and `aria-label` on navigation.
+- **Forms:** visible labels + `required` where applicable.
 
 ---
 
 ## Roadmap
 
-- Buscador interno real (ahora es UI).
-- Añadir más proyectos y filtros por tags.
-- Dark mode (opcional) y mejoras de Lighthouse.
+- Real internal search (currently UI only).
+- Add more projects and tag-based filters.
+- Dark mode (optional) and Lighthouse improvements.
 - i18n (ES/CAT/EN).
-- Actualizar enlaces de redes (LinkedIn/Instagram/etc.) a perfiles reales.
+- Update social media links (LinkedIn/Instagram/etc.) to real profiles.
 
 ---
 
-## Creditos y recursos
+## Credits and Resources
 
-- **Mapas:** Leaflet + tiles de OpenStreetMap y Esri.
-- **Formularios:** Formspree (`action` en `contact.html` y `myservices.html`).
-- **Iconos/recursos:** SVG dentro de `dist/icons/`.
+- **Maps:** Leaflet + OpenStreetMap and Esri tiles.
+- **Forms:** Formspree (`action` in `contact.html` and `myservices.html`).
+- **Icons/assets:** SVGs in `dist/icons/`.
 
 ---
 
-## Licencia
+## License
 
 ISC.
 
 ---
 
-## Autor
+## Author
 
 - **Daniel Moore Burgos**
 - GitHub: `https://github.com/danimb-git`
